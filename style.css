@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-backgroud: rgb(17, 57, 167);
+}
+body{
+    background-color: var(--color-backgroud);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.Box_interna, .Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Box{
+    width: 268px;
+    height: 510px;
+    background-color: black;
+    border-radius: 30px;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.527);
+}
+.gota{
+    position: absolute;
+    top: -1px;
+    width: 50%;
+    height: 22px;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Box_interna{
+    width: 250px;
+    height: 490px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+#tela_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.itens_baixo{
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    height: 50px;
+    border-radius: 13px;
+    background-color: rgba(255, 255, 255, 0.527);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.itens_cima{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 14px;
+    row-gap: 30px;
+    top: 10%;
+    
+}
+.icons{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.Span_Text{
+    color: white;
+    font-size: 11px;
+    text-shadow: 1px 2px 2px black;
+}
+.icons_Baixo{
+    margin-top: 5px;
+    margin-left: 7px;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#itens_gota{
+    width: 35px;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+}
+#itens_gotatwo{
+    width: 27px;
+    position: absolute;
+    top: 1.7%;
+    right: 12%;
+}
+#itens_gotathre{
+    width: 27px;
+    font-size: 15px;
+    position: absolute;
+    top: 1%;
+    color: white;
+    left: 13px;
+}
